@@ -1,0 +1,16 @@
+C:\Users\Administrator\source\repos\Cycles\Cycles\bin\Debug\net5.0\Cycles.exe
+C:\Users\Administrator\source\repos\Cycles\Cycles\bin\Debug\net5.0\Cycles.deps.json
+C:\Users\Administrator\source\repos\Cycles\Cycles\bin\Debug\net5.0\Cycles.runtimeconfig.json
+C:\Users\Administrator\source\repos\Cycles\Cycles\bin\Debug\net5.0\Cycles.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\Cycles\Cycles\bin\Debug\net5.0\Cycles.dll
+C:\Users\Administrator\source\repos\Cycles\Cycles\bin\Debug\net5.0\Cycles.pdb
+C:\Users\Administrator\source\repos\Cycles\Cycles\obj\Debug\net5.0\Cycles.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Cycles\Cycles\obj\Debug\net5.0\Cycles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\Cycles\Cycles\obj\Debug\net5.0\Cycles.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\Cycles\Cycles\obj\Debug\net5.0\Cycles.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\Cycles\Cycles\obj\Debug\net5.0\Cycles.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Cycles\Cycles\obj\Debug\net5.0\Cycles.dll
+C:\Users\Administrator\source\repos\Cycles\Cycles\obj\Debug\net5.0\refint\Cycles.dll
+C:\Users\Administrator\source\repos\Cycles\Cycles\obj\Debug\net5.0\Cycles.pdb
+C:\Users\Administrator\source\repos\Cycles\Cycles\obj\Debug\net5.0\Cycles.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\Cycles\Cycles\obj\Debug\net5.0\ref\Cycles.dll
