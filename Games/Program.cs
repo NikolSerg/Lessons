@@ -30,19 +30,25 @@ namespace Games
                 else
                 {
                     Console.WriteLine($"Загаданное чило: {goal}");
-                    
+
                     break;
                 }
             }
 
         }
     }
-
-    public class GuessTheNumber
-    {
-        static void Game()
-        {
-
-        }
-    }
 }
+
+public class GuessTheGame
+{
+    private Random random = new Random();
+    private int range;
+    private int Range
+    {
+        get { return range; }
+        set { range = value; }
+    }
+
+
+}
+
