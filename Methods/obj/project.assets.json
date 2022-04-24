@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Methods\\Methods.csproj",
-      "projectName": "Methods",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Methods\\Methods.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Methods\\Practice 5.csproj",
+      "projectName": "Practice 5",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Methods\\Practice 5.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Methods\\obj\\",
       "projectStyle": "PackageReference",

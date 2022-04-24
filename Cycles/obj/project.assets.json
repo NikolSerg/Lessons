@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Cycles\\Cycles.csproj",
-      "projectName": "Cycles",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Cycles\\Cycles.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Cycles\\Practice 3.csproj",
+      "projectName": "Practice 3",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Cycles\\Practice 3.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Cycles\\obj\\",
       "projectStyle": "PackageReference",

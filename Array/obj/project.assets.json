@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Array\\Array.csproj",
-      "projectName": "Array",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Array\\Array.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Array\\Practice 4.csproj",
+      "projectName": "Practice 4",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Array\\Practice 4.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Array\\obj\\",
       "projectStyle": "PackageReference",
