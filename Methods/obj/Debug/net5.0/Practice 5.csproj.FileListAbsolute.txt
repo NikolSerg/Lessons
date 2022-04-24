@@ -1,0 +1,16 @@
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 5.exe
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 5.deps.json
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 5.runtimeconfig.json
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 5.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 5.dll
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 5.pdb
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.dll
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\refint\Practice 5.dll
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.pdb
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\ref\Practice 5.dll

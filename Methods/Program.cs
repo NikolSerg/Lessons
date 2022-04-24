@@ -16,11 +16,11 @@ namespace Methods
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        static string[] SplitStringToWords(string Str)
+        static string[] SplitStringToWords(string str)
         {
             List<string> stroke = new List<string>();
             string word = null;
-            foreach (char ch in Str)
+            foreach (char ch in str)
             {
                 if (ch != ' ') word += ch;
                 else
@@ -36,10 +36,10 @@ namespace Methods
         /// Выводит в консоль элементы массива строк
         /// </summary>
         /// <param name="str"></param>
-        static void PrintStrings(string[] Str)
+        static void PrintStrings(string[] str)
         {
             Console.WriteLine("Предложение разбитое на слова: ");
-            foreach (string word in Str)
+            foreach (string word in str)
             {
                 Console.WriteLine(word);
             }
@@ -49,9 +49,9 @@ namespace Methods
         /// Выводит в консоль строку обратную данной
         /// </summary>
         /// <param name="str"></param>
-        static void PrintReverseWords(string Str)
+        static void PrintReverseWords(string str)
         {
-            string[] words = SplitStringToWords(Str);
+            string[] words = SplitStringToWords(str);
             string reverseString = null;
             for (int i = words.Length - 1; i >= 0; i--)
             {
