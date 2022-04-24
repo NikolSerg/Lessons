@@ -33,7 +33,6 @@ namespace Practice_6
                 for (int i = 0; i < empData.Length - 1; i++)
                     file.Write($"{empData[i]}#");
                 file.Write($"{empData[6]}\n");
-                
             }
         }
         static string[] ReadDataFromFile(string path)
@@ -84,8 +83,9 @@ namespace Practice_6
                         WriteDataToFile(path, empDataToWrite);
                         Console.Write("Нажмите '+', чтобы добавить больше сотрудников. ");
                         if (Console.ReadKey().Key != ConsoleKey.Add) break;
-                        else Console.WriteLine("Новые данные успешно добавлены!");
+                        else Console.WriteLine();
                     }
+                    Console.WriteLine("Новые данные успешно добавлены!");
                     break;
                 default:
                     break;
