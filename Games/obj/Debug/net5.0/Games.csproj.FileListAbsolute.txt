@@ -1,0 +1,16 @@
+C:\Users\Administrator\source\repos\Lessons\Games\bin\Debug\net5.0\Games.exe
+C:\Users\Administrator\source\repos\Lessons\Games\bin\Debug\net5.0\Games.deps.json
+C:\Users\Administrator\source\repos\Lessons\Games\bin\Debug\net5.0\Games.runtimeconfig.json
+C:\Users\Administrator\source\repos\Lessons\Games\bin\Debug\net5.0\Games.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\Lessons\Games\bin\Debug\net5.0\Games.dll
+C:\Users\Administrator\source\repos\Lessons\Games\bin\Debug\net5.0\Games.pdb
+C:\Users\Administrator\source\repos\Lessons\Games\obj\Debug\net5.0\Games.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Lessons\Games\obj\Debug\net5.0\Games.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\Lessons\Games\obj\Debug\net5.0\Games.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\Lessons\Games\obj\Debug\net5.0\Games.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\Lessons\Games\obj\Debug\net5.0\Games.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Lessons\Games\obj\Debug\net5.0\Games.dll
+C:\Users\Administrator\source\repos\Lessons\Games\obj\Debug\net5.0\refint\Games.dll
+C:\Users\Administrator\source\repos\Lessons\Games\obj\Debug\net5.0\Games.pdb
+C:\Users\Administrator\source\repos\Lessons\Games\obj\Debug\net5.0\Games.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\Lessons\Games\obj\Debug\net5.0\ref\Games.dll
