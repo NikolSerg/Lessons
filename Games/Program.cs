@@ -6,6 +6,10 @@ namespace Games
     {
         static void Main(string[] args)
         {
+            DateTime time = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine(time.ToString("d"));
+            Console.ReadKey();
+
 
             GuessTheGame game = new GuessTheGame();
             game.Game();

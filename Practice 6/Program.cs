@@ -85,7 +85,7 @@ namespace Practice_6
                         if (Console.ReadKey().Key != ConsoleKey.Add) break;
                         else Console.WriteLine();
                     }
-                    Console.WriteLine("Новые данные успешно добавлены!");
+                    Console.WriteLine("\nНовые данные успешно добавлены!");
                     break;
                 default:
                     break;
