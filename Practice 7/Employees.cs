@@ -158,6 +158,9 @@ namespace Practice_7
             }
         }
 
+        /// <summary>
+        /// Выводит в консоль данные сотрудников
+        /// </summary>
         public void ShowEmployees()
         {
             foreach (Employee emp in employees)
@@ -211,31 +214,56 @@ namespace Practice_7
             }
         }
 
+        /// <summary>
+        /// Изменяет имя выбранного сотрудника
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="newFullName"></param>
         public void ChangeFullName(int id, string newFullName)
         {
             int i = FindEmployeeById(id);
             employees[i].FullName = newFullName;
         }
 
+        /// <summary>
+        /// Изменяет дату рождения и возраст выбранного сотрудника
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="dateTime"></param>
         public void ChangeDateOfBirth(int id, DateTime dateTime)
         {
             int i = FindEmployeeById(id);
             employees[i].DateOfBirth = dateTime;
             employees[i].ChangeAge();
         }
-        
+
+        /// <summary>
+        /// Изменяет рост выбранного сотрудника
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="newHeight"></param>
         public void ChangeHeight(int id, ushort newHeight)
         {
             int i = FindEmployeeById(id);
             employees[i].Height = newHeight;
         }
 
+        /// <summary>
+        /// Изменяет место рождения выбранного сотрудника
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="newPlaceOfBirth"></param>
         public void ChangePlaceOfBirth(int id, string newPlaceOfBirth)
         {
             int i = FindEmployeeById(id);
             employees[i].PlaceOfBirth = newPlaceOfBirth;
         }
 
+        /// <summary>
+        /// Отбирает сотрудников добавленных в диапазоне дат
+        /// </summary>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
         public void ChooseByDateRange(DateTime min, DateTime max)
         {
             List<Employee> newEmployees = new List<Employee>();
@@ -248,6 +276,10 @@ namespace Practice_7
             ShowEmployees();
         }
 
+        /// <summary>
+        /// Сохраняет список в файл
+        /// </summary>
+        /// <param name="path"></param>
         public void SaveData(string path)
         {
             /*List<Employee> employeesToWrite = new List<Employee>();*/

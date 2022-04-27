@@ -40,6 +40,10 @@ namespace Practice_7
             this.fired = true;
         }
 
+        /// <summary>
+        /// Выводит данные сотрудника в консоль
+        /// </summary>
+        /// <returns></returns>
         public string[] GetEmpInformation()
         {
             string[] data = {"ID: " + id.ToString(),"Дата и время добавления записи: " + dateTime.ToString(),
@@ -48,7 +52,10 @@ namespace Practice_7
             return data;
         }
 
-        public void ChangeAge()
+        /// <summary>
+        /// 
+        /// </summary>
+        void ChangeAge()
         {
             age = (ushort)((DateTime.Now - dateOfBirth).TotalDays / 365);
         }
