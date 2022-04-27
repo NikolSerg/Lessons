@@ -53,9 +53,9 @@ namespace Practice_7
         }
 
         /// <summary>
-        /// 
+        /// Перерасчитывает возраст при изменении даты рождения
         /// </summary>
-        void ChangeAge()
+        public void ChangeAge()
         {
             age = (ushort)((DateTime.Now - dateOfBirth).TotalDays / 365);
         }
