@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Practice 6/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Practice 6.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Practice 6.dll": {}
+        }
+      },
+      "Practice 7/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Practice 6": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Practice 7.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Practice 7.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Practice 6/1.0.0": {
+      "type": "project",
+      "path": "../Practice 6/Practice 6.csproj",
+      "msbuildProject": "../Practice 6/Practice 6.csproj"
+    },
+    "Practice 7/1.0.0": {
+      "type": "project",
+      "path": "../Practice 7/Practice 7.csproj",
+      "msbuildProject": "../Practice 7/Practice 7.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Practice 7 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Administrator\\.nuget\\packages\\": {}
@@ -33,7 +70,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Administrator\\source\\repos\\Lessons\\Practice 7\\Practice 7.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Practice 7\\Practice 7.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
