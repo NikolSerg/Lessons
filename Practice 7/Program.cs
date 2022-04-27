@@ -95,19 +95,17 @@ namespace Practice_7
                             int id = int.Parse(Console.ReadLine());
                             Console.Clear();
                             employees.ShowEmployeeByID(id);
-                            Console.Write("\nНажмите \"0\" чтобы вернуться, \"1\" - удалить запись и вернуться," +
+                            Console.Write("\nНажмите \"Esc\" чтобы вернуться, \"1\" - удалить запись и вернуться," +
                                 " \"2\" - изменить запись");
 
                             ConsoleKey changer = Console.ReadKey().Key;
                             Console.Clear();
                             switch(changer)
                             {
-                                case ConsoleKey.NumPad0:
-                                    employees.ShowEmployees();
+                                case ConsoleKey.Escape:
                                     break;
                                 case ConsoleKey.NumPad1:
                                     employees.FireEmployee(id);
-                                    employees.ShowEmployees();
                                     break;
                                 case ConsoleKey.NumPad2:
                                     bool changing = true;
