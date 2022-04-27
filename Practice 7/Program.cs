@@ -26,7 +26,7 @@ namespace Practice_7
                 bool cont = true;
                 while (cont)
                 {
-                    employees.ShowAllEmployees();
+                    employees.ShowEmployees();
                     Console.WriteLine("Если хотите выбрать данные из диапазона дат нажмите \"1\"\n" +
                         "Если хотите отсортировать данные нажмите \"2\"\n" +
                         "Если хотите выбрать сотрудника нажмите \"3\"\n" +

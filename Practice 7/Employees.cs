@@ -63,7 +63,9 @@ namespace Practice_7
             {
                 ids[i] = employees[i].Id;
             }
-            maxID = ids.Max();
+            if (ids.Length > 0)
+                maxID = ids.Max();
+            else maxID = 0;
         }
 
         Employee[] RebuildData()
@@ -118,6 +120,7 @@ namespace Practice_7
         public void AddEmployee(string fullName, ushort height, DateTime dateOfBirth, string placeOfBirth)
         {
             Employee emp = new Employee(maxID + 1, fullName, height, dateOfBirth, placeOfBirth);
+            maxID++;
             Array.Resize(ref employees, employees.Length + 1);
             employees[employees.Length - 1] = emp;
             fullList.Add(emp);
@@ -184,31 +187,31 @@ namespace Practice_7
             {
                 case 0:
                     employees = employees.OrderBy(employee => employee.DateTime).ToArray();
-                    ShowEmployees();
+                    //ShowEmployees();
                     break;
                 case 1:
                     employees = employees.OrderBy(employee => employee.FullName).ToArray();
-                    ShowEmployees();
+                    //ShowEmployees();
                     break;
                 case 2:
                     employees = employees.OrderBy(employee => employee.Age).ToArray();
-                    ShowEmployees();
+                    //ShowEmployees();
                     break;
                 case 3:
                     employees = employees.OrderBy(employee => employee.Id).ToArray();
-                    ShowEmployees();
+                    //ShowEmployees();
                     break;
                 case 4:
                     employees = employees.OrderBy(employee => employee.Height).ToArray();
-                    ShowEmployees();
+                    //ShowEmployees();
                     break;
                 case 5:
                     employees = employees.OrderBy(employee => employee.DateOfBirth).ToArray();
-                    ShowEmployees();
+                    //ShowEmployees();
                     break;
                 case 6:
                     employees = employees.OrderBy(employee => employee.PlaceOfBirth).ToArray();
-                    ShowEmployees();
+                    //ShowEmployees();
                     break;
 
             }
