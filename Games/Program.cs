@@ -35,7 +35,7 @@ public class GuessTheGame
         Range = int.Parse(Console.ReadLine());
         goal = random.Next(0, range + 1);
         Console.WriteLine("Попробуйте угадать число");
-        
+
         while (true)
         {
             string sNum = Console.ReadLine();
