@@ -166,7 +166,6 @@ namespace Practice_8
 
             phones.Add(mPhone);
             phones.Add(aPhone);
-
             return person;
         }
         static void SerializePerson(XElement person)
@@ -206,6 +205,7 @@ namespace Practice_8
 
 
             XelementProgramm();
+            Pause();
         }
     }
 }

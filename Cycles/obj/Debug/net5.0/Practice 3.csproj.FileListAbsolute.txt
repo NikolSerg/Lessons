@@ -1,0 +1,16 @@
+C:\Users\Administrator\source\repos\Lessons\Cycles\bin\Debug\net5.0\Practice 3.exe
+C:\Users\Administrator\source\repos\Lessons\Cycles\bin\Debug\net5.0\Practice 3.deps.json
+C:\Users\Administrator\source\repos\Lessons\Cycles\bin\Debug\net5.0\Practice 3.runtimeconfig.json
+C:\Users\Administrator\source\repos\Lessons\Cycles\bin\Debug\net5.0\Practice 3.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\Lessons\Cycles\bin\Debug\net5.0\Practice 3.dll
+C:\Users\Administrator\source\repos\Lessons\Cycles\bin\Debug\net5.0\Practice 3.pdb
+C:\Users\Administrator\source\repos\Lessons\Cycles\obj\Debug\net5.0\Practice 3.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Lessons\Cycles\obj\Debug\net5.0\Practice 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\Lessons\Cycles\obj\Debug\net5.0\Practice 3.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\Lessons\Cycles\obj\Debug\net5.0\Practice 3.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\Lessons\Cycles\obj\Debug\net5.0\Practice 3.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Lessons\Cycles\obj\Debug\net5.0\Practice 3.dll
+C:\Users\Administrator\source\repos\Lessons\Cycles\obj\Debug\net5.0\refint\Practice 3.dll
+C:\Users\Administrator\source\repos\Lessons\Cycles\obj\Debug\net5.0\Practice 3.pdb
+C:\Users\Administrator\source\repos\Lessons\Cycles\obj\Debug\net5.0\Practice 3.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\Lessons\Cycles\obj\Debug\net5.0\ref\Practice 3.dll

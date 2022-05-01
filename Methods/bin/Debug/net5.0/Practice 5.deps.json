@@ -10,11 +10,21 @@
         "runtime": {
           "Practice 5.dll": {}
         }
+      },
+      "Practice 7/1.0.0": {
+        "runtime": {
+          "Practice 7.dll": {}
+        }
       }
     }
   },
   "libraries": {
     "Practice 5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Practice 7/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

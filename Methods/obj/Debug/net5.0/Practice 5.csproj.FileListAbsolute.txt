@@ -14,3 +14,10 @@ C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\refint\Prac
 C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.pdb
 C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.genruntimeconfig.cache
 C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\ref\Practice 5.dll
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 7.deps.json
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 7.runtimeconfig.json
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 7.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 7.exe
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 7.dll
+C:\Users\Administrator\source\repos\Lessons\Methods\bin\Debug\net5.0\Practice 7.pdb
+C:\Users\Administrator\source\repos\Lessons\Methods\obj\Debug\net5.0\Practice 5.csproj.CopyComplete

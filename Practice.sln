@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games", "Games\Games.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice 6", "Practice 6\Practice 6.csproj", "{96AAE06C-7472-4229-BB80-EC20E6054B68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice 7", "Practice 7\Practice 7.csproj", "{931BC33E-57E6-45AA-BEDD-FCA0045398C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice 7", "Practice 7\Practice 7.csproj", "{931BC33E-57E6-45AA-BEDD-FCA0045398C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice 8", "Practice 8\Practice 8.csproj", "{04129087-05F6-4583-8294-E99877A3CFDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice 8", "Practice 8\Practice 8.csproj", "{04129087-05F6-4583-8294-E99877A3CFDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice 9", "Practice 9\Practice 9.csproj", "{2077F41E-522E-4544-BAAA-FABC0218769E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{04129087-05F6-4583-8294-E99877A3CFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04129087-05F6-4583-8294-E99877A3CFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04129087-05F6-4583-8294-E99877A3CFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2077F41E-522E-4544-BAAA-FABC0218769E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2077F41E-522E-4544-BAAA-FABC0218769E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2077F41E-522E-4544-BAAA-FABC0218769E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2077F41E-522E-4544-BAAA-FABC0218769E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
