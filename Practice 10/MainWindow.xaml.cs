@@ -27,7 +27,7 @@ namespace Practice_10
         public MainWindow()
         {
             InitializeComponent();
-            bot = new TelegramBot(this, "5338294319:AAGcKJNnsHjUmBUzjrRFV3Vf3M8Jz-XAhSI");
+            bot = new TelegramBot(this, "");
             chatsList.ItemsSource = bot.Chats;
             bot.Update();
             
