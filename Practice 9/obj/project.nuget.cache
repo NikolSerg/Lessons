@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ie3jkFL2oxOXfBF33AqllfXPUjzepEv6manoKkXVOq4nyzWhr3e7PPJbciN04WtMYGlX/9R0c85DtN7aEMWfeA==",
+  "dgSpecHash": "Toez8bHtjwnV9nJ9kg6Gz3IiAj6rVOqqPNUbx6Llcua7TcL2y/kVleSxb3OIEnSS2PlqQIuORRHe6Ibj7yTUXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Practice 9\\Practice 9.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Practice 9\\Bot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

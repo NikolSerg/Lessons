@@ -23,7 +23,7 @@ namespace Practice_9
             Console.ReadLine();
 
 
-            string token = File.ReadAllText(@"C:\Users\Administrator\source\repos\Lessons\token.txt");
+            string token = File.ReadAllText(@"C:\Users\Administrator\source\repos\token.txt");
             Console.WriteLine("Токен: " + token);
 
             nPhotos = 0;
@@ -86,6 +86,9 @@ namespace Practice_9
                 nDocuments++;
             }
 
+            Console.WriteLine(files);
+
+
             bot = new TelegramBotClient(token);
             bot.OnMessage += Bot_OnMessage;
             bot.StartReceiving();
@@ -95,8 +98,11 @@ namespace Practice_9
 
         private static void Bot_OnMessage(object sender, Telegram.Bot.Args.MessageEventArgs e)
         {
+            Console.Write($"Name: {e.Message.Chat.FirstName}\nLast Name: {e.Message.Chat.LastName}\n" +
+                $"Chat ID: {e.Message.Chat.Id}\nUser Name: {e.Message.From.Username}\n");
             if (e.Message.Type == Telegram.Bot.Types.Enums.MessageType.Text)
             {
+                Console.Write($"Message Text: {e.Message.Text}");
                 if (e.Message.Text.ToLower() == "/download")
                 {
                     string text = "Выберите файл, который хотите скачать\n\n";
@@ -229,11 +235,22 @@ namespace Practice_9
 
         static async void UploadFile(string path, Telegram.Bot.Types.ChatId id)
         {
-            Stream stream = new FileStream("./downloads/" + path, FileMode.Open, FileAccess.Read);
-            Telegram.Bot.Types.InputFiles.InputOnlineFile file = new Telegram.Bot.Types.InputFiles.InputOnlineFile(stream);
-            await bot.SendDocumentAsync(id, file);
-            stream.Close();
-            stream.Dispose();
+            if (path.ToLower().Contains(".jpg") || path.ToLower().Contains(".png") || path.ToLower().Contains(".jpeg"))
+            {
+                UploadPhoto(path, id);
+            }
+            else if (path.ToLower().Contains(".mp4") || path.ToLower().Contains(".avi"))
+            {
+                UploadVideo(path, id);
+            }
+            else
+            {
+                Stream stream = new FileStream("./downloads/" + path, FileMode.Open, FileAccess.Read);
+                Telegram.Bot.Types.InputFiles.InputOnlineFile file = new Telegram.Bot.Types.InputFiles.InputOnlineFile(stream);
+                await bot.SendDocumentAsync(id, file);
+                stream.Close();
+                stream.Dispose();
+            }
         }
         static async void UploadVideo(string path, Telegram.Bot.Types.ChatId id)
         {

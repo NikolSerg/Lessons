@@ -4725,9 +4725,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Practice 9\\Practice 9.csproj",
-      "projectName": "Practice 9",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Practice 9\\Practice 9.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Practice 9\\Bot.csproj",
+      "projectName": "Bot",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Practice 9\\Bot.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\source\\repos\\Lessons\\Practice 9\\obj\\",
       "projectStyle": "PackageReference",
