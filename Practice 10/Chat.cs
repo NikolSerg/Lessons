@@ -18,8 +18,15 @@ namespace Practice_10
         public long Id { get; set; }
         public string LastName { get; set; }
         public string Text { get; set; }
-
         public uint Count { get; set; }
+        public List<string> Files { get; set; }
+        public bool Initialized { get; set; }
+
+
+        public Chat()
+        {
+
+        }
 
         public Chat(Update update, MainWindow window)
         {
@@ -29,12 +36,17 @@ namespace Practice_10
             Id = update.Message.Chat.Id;
             LastName = update.Message.Chat.LastName;
             Text = update.Message.Text;
+            Files = new List<string>();
             this.window = window;
+            if (update.Message.Text == "Unknown initializing command")
+                Initialized = false;
+            else Initialized = true;
             window.Dispatcher.Invoke(() =>
             {
                 messages.Add(new Message(Id, Name, update.Message.Date.ToString(), update.Message.Text));
             }
             );
         }
+        
     }
 }
