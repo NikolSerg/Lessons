@@ -104,6 +104,7 @@ namespace Practice_10
         {
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.Filter = "*.JSON | *.json";
+            dialog.InitialDirectory = Directory.GetCurrentDirectory();
             if (dialog.ShowDialog() == true)
             {
                 JsonSerializer jsonSerializer = new JsonSerializer();
