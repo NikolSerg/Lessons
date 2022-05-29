@@ -26,7 +26,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <ListBox x:Name="messages" Margin="199,0,0,210" Background="#FF353535" Foreground="#FFF1ECAE" VerticalAlignment="Bottom" BorderThickness="0,0,0,1" Padding="0,0,0,10" ScrollViewer.CanContentScroll="False">
+        <ListBox x:Name="messages" Margin="199,0,0,210" Background="#FF353535" Foreground="#FFF1ECAE" VerticalAlignment="Bottom" BorderThickness="0,0,0,1" Padding="0,0,0,10" ScrollViewer.CanContentScroll="False" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Auto">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Margin="30 0 0 0">
@@ -36,7 +36,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBox x:Name="sendMessageBox" Margin="250,0,220,30" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="20" Height="151" MaxWidth="1000" MinWidth="400" Background="#FFE4E1D4" Foreground="#FF3A3A3A" KeyDown="sendMessageBox_KeyDown"/>
+        <TextBox x:Name="sendMessageBox" Margin="250,0,220,30" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="20" Height="151" MaxWidth="1000" MinWidth="400" Background="#FFE4E1D4" Foreground="#FF3A3A3A" KeyDown="sendMessageBox_KeyDown" GotFocus="sendMessageBox_MouseLeftButtonDown"/>
         <Button x:Name="clearButton" Content="Clear History" Margin="0,0,31,148" HorizontalAlignment="Right" Width="151" Height="33" VerticalAlignment="Bottom" Click="clearButton_Click" Visibility="Hidden"/>
         <Button x:Name="saveButton" Content="Save History" Margin="0,0,31,105" HorizontalAlignment="Right" Width="151" Height="33" VerticalAlignment="Bottom" Visibility="Hidden" Click="saveButton_Click"/>
         <Button x:Name="minimizeButton" Content="&lt;&lt;" HorizontalAlignment="Right" VerticalAlignment="Center" Height="53" Width="22" Click="minimizeButton_Click" Visibility="Hidden"/>

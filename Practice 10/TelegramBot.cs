@@ -10,28 +10,37 @@ using Telegram.Bot.Types.Enums;
 using System.IO;
 using System.Threading;
 using Telegram.Bot.Types.InputFiles;
+using System.Net;
 
 namespace Practice_10
 {
     internal class TelegramBot
     {
+        DateTime date;
         public ObservableCollection<Chat> Chats { get; set; }
         public TelegramBotClient Bot { get; set; }
         MainWindow window;
+        Sugar11Value sugarWebClient;
 
         public TelegramBot(MainWindow window, string token)
         {
+            date = DateTime.Now;
             this.window = window;
             Bot = new TelegramBotClient(token);
             Chats = new ObservableCollection<Chat>();
+            sugarWebClient = new Sugar11Value();
         }
 
         public async void Update()
-        {
+        { 
             int offset = 0;
             while (true)
             {
-
+                if (date.DayOfYear != DateTime.Now.DayOfYear)
+                {
+                    sugarWebClient.Update();
+                    date = DateTime.Now;
+                }
                 var updates = await Bot.GetUpdatesAsync(offset);
                 foreach (Update update in updates)
                 {
@@ -106,7 +115,7 @@ namespace Practice_10
                                 catch
                                 {
                                     await Bot.SendTextMessageAsync(chat.Id, "File is too big");
-                                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: File is too big\n".ToUpper()));
+                                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: File is too big\n".ToUpper()));
                                 }
                             }
                             else if (type == MessageType.Audio)
@@ -125,7 +134,7 @@ namespace Practice_10
                                 catch
                                 {
                                     await Bot.SendTextMessageAsync(chat.Id, "File is too big");
-                                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: File is too big\n".ToUpper()));
+                                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: File is too big\n".ToUpper()));
                                 }
                             }
                             else if (type == MessageType.Document)
@@ -144,7 +153,7 @@ namespace Practice_10
                                 catch
                                 {
                                     await Bot.SendTextMessageAsync(chat.Id, "File is too big");
-                                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: File is too big\n".ToUpper()));
+                                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: File is too big\n".ToUpper()));
                                 }
                             }
 
@@ -152,7 +161,7 @@ namespace Practice_10
                             {
                                 chat.Count++;
                                 chat.messages.Add(new Message(update.Message.Chat.Id, chat.Name,
-                                update.Message.Date.ToString(), messageText));
+                                (update.Message.Date + TimeSpan.FromHours(3)).ToString(), messageText));
                             });
                             break;
                         }
@@ -182,7 +191,24 @@ namespace Practice_10
         {
             if (update.Message.Text == "/start")
             {
-
+                string textMessage = "Hi, this Bot will serve you to get information about quotations of sugar from \"ICE\" exchange" +
+                    " and to keep some of yours files.\n\nTo get current value of sugar No.11 send \n\t/quotation" +
+                    "\n\nTo get schematic graphic send \n\t/graphic\n\nTo upload files to the cloud just send them as a message" +
+                    "\n\nTo see a list of your files and get them send \n\t/download";
+                await Bot.SendTextMessageAsync(chat.Id, textMessage);
+                chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: Send a command list\n".ToUpper()));
+            }
+            else if (update.Message.Text == "/quotation")
+            {
+                string textMessage = $"Current value of a long ton of sugar No.11:\n{sugarWebClient.GetValue()}";
+                await Bot.SendTextMessageAsync(chat.Id, textMessage);
+                chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: Send current quotation of sugar\n".ToUpper()));
+            }
+            else if (update.Message.Text == "/graphic")
+            {
+                string path = update.Message.Text.Replace("/", null) + ".jpg";
+                UploadPhoto(chat, path, $"Graphic of quotations from 01.01.2022 to {DateTime.Now.ToShortDateString()} by days.");
+                chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: Graphic successfully send.\n".ToUpper()));
             }
             else if (update.Message.Text == "/download")
             {
@@ -199,7 +225,7 @@ namespace Practice_10
                         path = $"./{chat.Id}/{file}";
                         UploadPhoto(chat, path);
                         found = true;
-                        chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: File successfully send.\n".ToUpper()));
+                        chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: File successfully send.\n".ToUpper()));
                         break;
                     }
                     else
@@ -210,7 +236,7 @@ namespace Practice_10
                 if (!found)
                 {
                     await Bot.SendTextMessageAsync(chat.Id, "Unable to find this file.");
-                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: File not found.\n".ToUpper()));
+                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: File not found.\n".ToUpper()));
                 }
             }
             else if (update.Message.Text.Contains("/videos_file"))
@@ -224,7 +250,7 @@ namespace Practice_10
                         path = $"./{chat.Id}/{file}";
                         UploadVideo(chat, path);
                         found = true;
-                        chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: File successfully send.\n".ToUpper()));
+                        chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: File successfully send.\n".ToUpper()));
                         break;
                     }
                     else
@@ -235,7 +261,7 @@ namespace Practice_10
                 if (!found)
                 {
                     await Bot.SendTextMessageAsync(chat.Id, "Unable to find this file.");
-                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: File not found.\n".ToUpper()));
+                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: File not found.\n".ToUpper()));
                 }
             }
             else if (update.Message.Text.Contains("/documents_file"))
@@ -249,7 +275,7 @@ namespace Practice_10
                         path = $"./{chat.Id}/{file}";
                         UploadDocument(chat, path);
                         found = true;
-                        chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: File successfully send.\n".ToUpper()));
+                        chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: File successfully send.\n".ToUpper()));
                         break;
                     }
                     else
@@ -260,14 +286,14 @@ namespace Practice_10
                 if (!found)
                 {
                     await Bot.SendTextMessageAsync(chat.Id, "Unable to find this file.");
-                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: File not found.\n".ToUpper()));
+                    chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: File not found.\n".ToUpper()));
                 }
             }
             else if (update.Message.Text.Contains("/"))
             {
                 await Bot.SendTextMessageAsync(update.Message.Chat.Id, "Unknown command, send \"/start\" to find out " +
                 "which command you can use with this bot.");
-                chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: Unknown command\n".ToUpper()));
+                chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: Unknown command\n".ToUpper()));
             }
         }
 
@@ -292,8 +318,8 @@ namespace Practice_10
             {
                 files += $" /{file}\n";
             }
-            await Bot.SendTextMessageAsync(chat.Id, $"List of files available for download:\n{files}");
-            chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n            You: Send list of files\n".ToUpper()));
+            await Bot.SendTextMessageAsync(chat.Id, $"List of files available for downloading:\n{files}");
+            chat.messages.Add(new Message(chat.Id, chat.Name, DateTime.Now.ToString(), "\n\tYou: Send list of files\n".ToUpper()));
         }
 
         async void UploadPhoto(Chat chat, string path)
@@ -301,6 +327,15 @@ namespace Practice_10
             Stream stream = new FileStream(path, FileMode.Open);
             InputOnlineFile file = new InputOnlineFile(stream);
             await Bot.SendPhotoAsync(chat.Id, file);
+            stream.Close();
+            stream.Dispose();
+        }
+
+        async void UploadPhoto(Chat chat, string path, string caption)
+        {
+            Stream stream = new FileStream(path, FileMode.Open);
+            InputOnlineFile file = new InputOnlineFile(stream);
+            await Bot.SendPhotoAsync(chat.Id, file, caption);
             stream.Close();
             stream.Dispose();
         }

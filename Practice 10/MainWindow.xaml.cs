@@ -18,6 +18,8 @@ using Telegram.Bot.Types;
 using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 using Microsoft.Win32;
+using System.Drawing;
+using System.IO;
 
 namespace Practice_10
 {
@@ -30,7 +32,11 @@ namespace Practice_10
         public MainWindow()
         {
             InitializeComponent();
-            bot = new TelegramBot(this, "");
+            string path = "../../../../token.txt";
+            string token = System.IO.File.ReadAllText(path);
+            sendMessageBox.Text = "To send a message press \"Enter\".";
+            sendMessageBox.Foreground = System.Windows.Media.Brushes.Gray;
+            bot = new TelegramBot(this, token);
             if (!System.IO.File.Exists("chat.json")) System.IO.File.Create("chat.json").Close();
             else
             {
@@ -42,22 +48,21 @@ namespace Practice_10
             this.MinWidth = 215;
             this.Width = 215;
             this.Height = 400;
-            this.MaxHeight = 400;
         }
 
         private void StackPanel_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.ResizeMode = ResizeMode.CanResize;
-            this.Width = 800;
+            this.Width = 880;
             this.MinWidth = 430;
             clearButton.Visibility = Visibility.Visible;
             saveButton.Visibility = Visibility.Visible;
             minimizeButton.Visibility = Visibility.Visible;
 
-            string name = ((TextBlock)((StackPanel)sender).Children[0]).Text;
+            string id = ((TextBlock)((StackPanel)sender).Children[2]).Text;
             foreach (Chat chat in chatsList.Items)
             {
-                if (chat.Name == name)
+                if (chat.Id.ToString() == id)
                 {
                     messages.ItemsSource = chat.messages;
                 }
@@ -109,12 +114,23 @@ namespace Practice_10
 
         private void minimizeButton_Click(object sender, RoutedEventArgs e)
         {
+            if (this.WindowState == WindowState.Maximized) this.WindowState = WindowState.Normal;
             this.MinWidth = 215;
             this.Width = 215;
+            this.Height = 400;
             this.ResizeMode = ResizeMode.NoResize;
             minimizeButton.Visibility = Visibility.Hidden;
             clearButton.Visibility = Visibility.Hidden;
             saveButton.Visibility = Visibility.Hidden;
+        }
+
+        private void sendMessageBox_MouseLeftButtonDown(object sender, RoutedEventArgs e)
+        {
+            if (sendMessageBox.Text == "To send a message press \"Enter\".")
+            {
+                sendMessageBox.Clear();
+                sendMessageBox.Foreground = System.Windows.Media.Brushes.Black;
+            }
         }
     }
 

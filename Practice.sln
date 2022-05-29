@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice 7", "Practice 7\Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice 8", "Practice 8\Practice 8.csproj", "{04129087-05F6-4583-8294-E99877A3CFDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bot", "Practice 9\Bot.csproj", "{2077F41E-522E-4544-BAAA-FABC0218769E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bot", "Practice 9\Bot.csproj", "{2077F41E-522E-4544-BAAA-FABC0218769E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice 10", "Practice 10\Practice 10.csproj", "{5AF0135E-88BD-4EBE-8FCA-DFFB04D49415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParsingCSVTest", "ParsingCSVTest\ParsingCSVTest.csproj", "{35D81323-0277-406D-9DDF-00AF1325E0A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{5AF0135E-88BD-4EBE-8FCA-DFFB04D49415}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AF0135E-88BD-4EBE-8FCA-DFFB04D49415}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AF0135E-88BD-4EBE-8FCA-DFFB04D49415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D81323-0277-406D-9DDF-00AF1325E0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D81323-0277-406D-9DDF-00AF1325E0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D81323-0277-406D-9DDF-00AF1325E0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D81323-0277-406D-9DDF-00AF1325E0A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

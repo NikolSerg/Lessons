@@ -43,7 +43,7 @@ namespace Practice_10
             else Initialized = true;
             window.Dispatcher.Invoke(() =>
             {
-                messages.Add(new Message(Id, Name, update.Message.Date.ToString(), update.Message.Text));
+                messages.Add(new Message(Id, Name, (update.Message.Date + TimeSpan.FromHours(3)).ToString(), update.Message.Text));
             }
             );
         }
